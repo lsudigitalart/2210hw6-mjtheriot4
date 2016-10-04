@@ -65,9 +65,10 @@ if (timeline % timer == 0) {
   image(background,0,0);
   textSize(50);
   text ("click", width/3, height/2);
+  printImg = floor(random(10,46));
 }
 if (mouseIsPressed && toggle == 1) {
-  printImg = floor(random(10,46));
+
   switch (printImg) {
     case 01:
       image(img01,mouseX,mouseY);
