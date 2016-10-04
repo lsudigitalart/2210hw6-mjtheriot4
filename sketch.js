@@ -60,12 +60,11 @@ var printImg;
 var doonce = 1
 
 function draw (){
-
+printImg = floor(random(10,46));
 if (timeline % timer == 0) {
   image(background,0,0);
   textSize(50);
   text ("click", width/3, height/2);
-  printImg = floor(random(10,46));
 }
 if (mouseIsPressed && toggle == 1) {
 
