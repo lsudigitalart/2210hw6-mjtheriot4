@@ -57,14 +57,14 @@ function setup(){
 var timeline = 0;
 var timer = 60 * 15;
 var printImg;
-var doonce = 1
+var toggle = 1
 
 function draw (){
 printImg = floor(random(10,46));
 if (timeline % timer == 0) {
   image(background,0,0);
-  textSize(50);
-  text ("click", width/3, height/2);
+  textSize(30);
+  text ("click anywhere", 10, 30);
 }
 if (mouseIsPressed && toggle == 1) {
 
@@ -192,7 +192,7 @@ if (mouseIsPressed && toggle == 1) {
   }
     toggle = 0;
 }
-  if (timeline % 30 == 0) { toggle = 1}
+  if (timeline % 20 == 0) { toggle = 1}
   timeline++;
 
 }
